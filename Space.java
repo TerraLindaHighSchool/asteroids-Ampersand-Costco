@@ -64,8 +64,10 @@ public class Space extends World
             
             Color starColor = new Color(starBrightness + deltaRed, starBrightness + deltaGreen, starBrightness + deltaBlue);
             
+            int starSize = Greenfoot.getRandomNumber(3) + 1;
+            
             background.setColor(starColor);
-            background.fillOval(x, y, Greenfoot.getRandomNumber(3) + 1, Greenfoot.getRandomNumber(3) + 1);
+            background.fillOval(x, y, starSize, starSize);
         }
     }
     
